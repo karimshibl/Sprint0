@@ -1,0 +1,42 @@
+git init
+
+git add firstfile.txt
+git add secondfile.txt
+git add thirdfile.txt
+
+
+git config user.email 'karim.shibl97@gmail.com'
+git config user.name "karimshibl"
+
+git commit -m' commiting to be able to delete the second file'
+
+git rm 'secondfile.txt'
+
+git reset HEAD 'secondfile.txt'
+
+git checkout -- secondfile.txt
+
+git remote add origin https://github.com/karimshibl/Sprint0.git
+
+git push -u origin master
+
+git branch ReadMe
+
+git checkout ReadMe
+
+git add README.md
+
+
+git commit -m 'adding to readme branch'
+
+git checkout master
+
+git merge ReadMe
+
+git add 'AllMyCommands.txt'
+
+git commit -m "Adding AllMyCommands file"
+
+git push
+
+
